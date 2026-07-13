@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0B0E23;
+  --foreground: #E5E7EB;
+}
+
+@theme {
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --font-display: var(--font-orbitron), system-ui, sans-serif;
+  
+  --color-space-navy: #0B0E23;
+  --color-nebula-purple: #6C5CE7;
+  --color-cosmic-gold: #FFC947;
+  --color-starlight-white: #E5E7EB;
+  --color-starlight-gray: #94A3B8;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* Glassmorphism custom classes */
+.glass {
+  background: rgba(11, 14, 35, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(108, 92, 231, 0.15);
+}
+
+.glass-accent {
+  background: rgba(108, 92, 231, 0.1);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(108, 92, 231, 0.25);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0E23;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6C5CE7;
+}
